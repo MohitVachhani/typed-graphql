@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "name": "Mohit",
+    "surname": "Vachhani",
+    "emailId": "mohitvachhani55@gmail.com",
+    "courseIds": ["101", "102", "103", "104"]
+  },
+  {
+    "id": "2",
+    "name": "Jwalin",
+    "surname": "Thaker",
+    "emailId": "jwalin.thaker@lyearn.com",
+    "courseIds": []
+  }
+]
