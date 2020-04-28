@@ -5,7 +5,6 @@ import graphqlHTTP from 'express-graphql';
 import express from 'express';
 import { buildSchema} from "type-graphql";
 import UserResolver from './resolvers/User';
-import CourseResolver from "./resolvers/Course";
 
 dotenv.config();
 
@@ -28,7 +27,7 @@ async function connectMongo(){
 
 const main = async() => {
   const schema = await buildSchema({
-    resolvers:  [UserResolver, CourseResolver]
+    resolvers:  [UserResolver]
   });
   const app = express();
   app.use('/graphql', graphqlHTTP({
