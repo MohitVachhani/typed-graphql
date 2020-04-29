@@ -2,10 +2,12 @@ import { ArgsType, Field, ID, InputType } from "type-graphql";
 import { prop as Property } from "@typegoose/typegoose";
 
 @ArgsType()
-export class GetUserByIdArgs {
-  @Field(() => ID)
-  @Property()
-  id: String;
+export class GetUserByKeyArgs {
+  @Field(() => ID, {nullable: true})
+  id?: String;
+
+  @Field(() => String, {nullable: true})
+  email?: String;
 }
 
 @InputType()
